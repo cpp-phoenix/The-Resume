@@ -1,0 +1,302 @@
+body {
+  background: #111111;
+  //background: #26272B;
+}
+
+.eye1 {
+  transform: rotate(45deg);
+  margin-left:10px;
+  background-color: white;
+  width:20px;
+  height:20px;
+  margin-top: 4px;
+  position: fixed;
+  animation-name: eyetransition;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+@keyframes eyetransition {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.eye2 {
+  transform: rotate(45deg);
+  margin-left:60px;
+  margin-top: 4px;
+  background-color: white;
+  width:20px;
+  height:20px;
+  position: fixed;
+  animation-name: eyetransition;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  border-radius: 50%;
+}
+
+.smile {
+  margin-left:26px;
+  position:fixed;
+  width:40px;
+  height:6px;
+  background-color: white;
+  animation-name: smile;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes smile {
+  25%{
+    transform:rotate(360Deg);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+}
+
+#line1 {
+  color:white;
+  font-family: 'Space Mono',monospace;
+  font-size: 6vw;
+  margin-top:20%;
+  font-weight: bold;
+}
+
+#line2 {
+  color:white;
+  margin-top:1.4vw;
+  font-family: 'Space Mono',monospace;
+  font-size: 4.8vw;
+  font-weight: bold;
+}
+
+.introleft {
+    border-right: 2px solid white;
+    float: left;
+    width:53%;
+    height:75vh;
+    margin-left:1vh;
+
+}
+
+.introright{
+  float: right;
+  width:45%;
+  height:75vh;
+}
+.introright img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+#left-right-container {
+  width:100%;
+  height: 77vh;
+}
+#typed {
+  font-size:20px;
+
+}
+
+.diccontainer {
+  text-align: center;
+}
+
+.typed-cursor {
+  font-size:4.8vw;
+  color:white;
+}
+.scroll {
+  position: fixed;
+  width:100%;
+  height:12vh;
+}
+.scrolldown {
+  margin-left:48%;
+  color:white;
+  font-size: 20px;
+  font-family: 'Space Mono',monospace;
+  font-weight: bold;
+}
+.arrow {
+  margin-left:52.5%;
+  color:red;
+  font-family: 'Space Mono',monospace;
+  font-weight: bold;
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  }
+@keyframes scroll {
+      50%{
+          margin-top:8px;
+      }
+  }
+.down {
+  margin-left:52.5%;
+  color:white;
+  font-family: 'Space Mono',monospace;
+  font-weight: bold;
+  animation-name: down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes down {
+      50%{
+          margin-top:6px;
+      }
+}
+
+.cpp-project {
+    width:100%;
+    height:424px;
+}
+.plus {
+  animation-name: plus;
+  animation-duration: 2s;
+  animation-iteration-count: 100;
+}
+
+@keyframes plus {
+    100%{
+      transform: rotateX(360deg);
+    }
+}
+
+.plus1{
+  animation-name: plus;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+
+.cpp-project2 {
+    width:100%;
+    height:424px;
+}
+.maze1 {
+  animation-name: maze;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+@keyframes maze1 {
+  50%{
+    transform: rotateY(30Deg);
+  }
+  100%{
+    transform:rotateY(0Deg);
+  }
+}
+@keyframes maze {
+    50%{
+      transform: rotateY(15deg);
+    }
+    100%{
+      transform: rotateY(0deg);
+    }
+}
+.maze2{
+  animation-name: maze1;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+.web-project {
+    width:100%;
+    height:30vw;
+}
+.android-project {
+    width:100%;
+    height:30vw;
+}
+.left{
+  float:left;
+  height:100%;
+  width:48%;
+  padding-right:30px;
+  border-right: 2px solid white;
+}
+.right{
+  float:right;
+  height:100%;
+  width:49%;
+}
+.rightdata {
+  margin-left:22%;
+  color:white;
+  font-size:4.5vw;
+}
+.lefttexttitle {
+  font-family: 'Space Mono',monospace;
+  font-weight: bold;
+  color:white;
+  font-size:3vw;
+  margin-top: 10%;
+}
+.lefttextsummary {
+  margin-top:10px;
+  color:white;
+  font-size: 1.5vw;
+  font-family: 'Space Mono',monospace;
+}
+.footer {
+  border:2px solid red;
+  width:100%;
+  height:30vw;
+}
+@media screen and (max-width:1300px) {
+  .scroll{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .introleft {
+    border:0px;
+    width:100%;
+    margin-left:0;
+  }
+  #line1{
+    font-size:60px;
+  }
+  .introright{
+    display: none;
+  }
+  .scroll{
+    display: none;
+  }
+   .left{
+    height:100%;
+    width:100%;
+    padding-right: 0px;
+    border-right: 0px solid white;
+  }
+  .lefttexttitle{
+    font-size:27px;
+  }
+  .lefttextsummary {
+    font-size:20px;
+  }
+  .cpp-project2 {
+    height:280px;
+  }
+  .cpp-project{
+    height:310px;
+  }
+  .right {
+    padding-top:6%;
+    padding-left:50%;
+    width:100%;
+  }
+  .plus,.plus1 {
+    font-size:50px;
+  }
+}
