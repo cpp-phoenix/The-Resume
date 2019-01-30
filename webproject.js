@@ -29,14 +29,6 @@ $(window).scroll(function() {
     var introleftvar = $('.introleft').offset().top;
     var scroll = this.scrollY;
     var currentScroll = $(this).scrollTop();
-    if(scroll>=17500) {
-      $('.footerlefthide').fadeIn();
-      $('.heart').fadeIn();
-    }
-    else {
-      $('.footerlefthide').fadeOut();
-      $('.heart').fadeOut();
-    }
     if(scroll>=7400 && scroll<=16200) {
         $('.Iwantto').css({display:'block',position: 'fixed', top:'50%'});
         if(scroll>=7600 && scroll<=9600) {
